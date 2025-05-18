@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Web Development</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+        <h1>ApexPlanet</h1>
+        <nav class="nav-container">
+            <ul class="nav-flex">
+                <li><a href="#quiz">Interactive Quiz</a></li>
+                <li><a href="#carousel">Image Carousel</a></li>
+                <li><a href="#api">API Data</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="quiz" class="section-container">
+            <h2>Interactive Quiz</h2>
+            <div class="quiz-container">
+                <div id="quiz-progress">
+                    <span id="current-question">1</span> of <span id="total-questions">5</span>
+                </div>
+                <div id="quiz-question" class="quiz-question"></div>
+                <div id="quiz-options" class="quiz-options"></div>
+                <div class="quiz-controls">
+                    <button id="prev-btn" disabled>Previous</button>
+                    <button id="next-btn">Next</button>
+                </div>
+                <div id="quiz-result" class="quiz-result"></div>
+            </div>
+        </section>
+
+        <section id="carousel" class="section-container">
+            <h2>Image Carousel</h2>
+            <div class="carousel-container">
+                <button id="prev-carousel" class="carousel-btn">&#10094;</button>
+                <div class="carousel-slide">
+                    <img src="img1.jpeg" alt="ApexPlanet_img" class="carousel-image active">
+                    <img src="img2.jpeg" alt="ApexPlanet_img" class="carousel-image">
+                    <img src="img3.jpeg" alt="ApexPlanet_img" class="carousel-image">
+                    <img src="img2.jpeg" alt="ApexPlanet_img" class="carousel-image">
+                </div>
+                <button id="next-carousel" class="carousel-btn">&#10095;</button>
+            </div>
+            <div class="carousel-indicators"></div>
+        </section>
+
+        <section id="api" class="section-container">
+            <h2>API Data Fetcher</h2>
+            <div class="api-container">
+                <div class="api-controls">
+                    <select id="api-select">
+                        <option value="jokes">Jokes API</option>
+                        <option value="quotes">Quotes API</option>
+                        <option value="weather">Weather API</option>
+                    </select>
+                    <button id="fetch-btn">Fetch Data</button>
+                </div>
+                <div id="api-result" class="api-result">
+                    <p>Select an API and click "Fetch Data" to see results here.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ApexPlanet Software Pvt Ltd</p>
+    </footer>
+
+    <script src="script3.js"></script>
+</body>
+</html>
